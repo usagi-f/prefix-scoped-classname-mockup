@@ -1,3 +1,8 @@
-header {
+.te-header {
     background-color: red;
+}
+
+.title {
+    color: white;
+    margin: 0;
 }

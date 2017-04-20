@@ -2,6 +2,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Prefix = require('./src/utils/prefix');
+const prefix = new Prefix().getPrefix();
 
 const jsconfig = {
     entry: [
@@ -53,6 +55,9 @@ const cssconfig = {
                     require('postcss-import'),
                     require('postcss-css-variables'),
                     require('postcss-nested'),
+                    require('postcss-class-prefix')(
+                        prefix
+                    ),
                     require('autoprefixer')({
                         browsers: [
                             'last 2 versions'
