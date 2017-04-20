@@ -1,5 +1,6 @@
 'use strict';
 const path = require('path');
+const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const jsconfig = {
@@ -39,33 +40,30 @@ const cssconfig = {
                 exclude: /node_modules/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
-                    use: 'css-loader'
+                    use: ['css-loader', 'postcss-loader']
                 })
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('bundle.css')
-        // new webpack.LoaderOptionsPlugin({
-        //     options: {
-        //         postcss: [
-        //             postcssImport(),
-        //             postcssCssVariables(),
-        //             postcssNested(),
-        //             autoprefixer({
-        //                 browsers: [
-        //                     'last 2 versions',
-        //                     'iOS > 8',
-        //                     'ios_saf > 5.0',
-        //                     'Android > 4.4'
-        //                 ]
-        //             }),
-        //             cssnano({
-        //                 safe: true
-        //             })
-        //         ]
-        //     },
-        // }),
+        new ExtractTextPlugin('bundle.css'),
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: [
+                    require('postcss-import'),
+                    require('postcss-css-variables'),
+                    require('postcss-nested'),
+                    require('autoprefixer')({
+                        browsers: [
+                            'last 2 versions'
+                        ]
+                    }),
+                    require('cssnano')({
+                        safe: true
+                    })
+                ]
+            },
+        }),
     ]
 };
 
