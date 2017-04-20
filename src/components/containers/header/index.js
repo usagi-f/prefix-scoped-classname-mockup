@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Title from '../../presentational/atoms/title/';
 import Prefix from '../../../utils/prefix';
 const prefix = new Prefix().getPrefix();
 
@@ -20,7 +21,7 @@ class Header extends React.Component {
     render() {
         return (
             <header className={`${prefix}te-header`}>
-                <p className={`${prefix}title`}>{this.props.title}</p>
+                <Title>{this.props.title}</Title>
                 <p className={this.getClassFlg(this.props.flg)}>{this.getSomething(this.props.flg)}</p>
             </header>
         );

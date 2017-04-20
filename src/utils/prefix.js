@@ -1,6 +1,6 @@
 module.exports = class Prefix {
     constructor () {
-        this.prefix = '_rfMI90gdsn29nsbki8BZia-'; // random
+        this.prefix = '_b8aE-'; // random
     }
 
     getPrefix() {

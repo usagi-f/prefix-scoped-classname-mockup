@@ -1,2 +1,3 @@
 @import './base/reset.css';
 @import './containers/header/header.css';
+@import './presentational/atoms/title/title.css';

@@ -1,21 +1,16 @@
 .te-header {
     background-color: red;
-}
 
-.title,
-.flg-true,
-.flg-false {
-    margin: 0;
-}
+    .flg-true,
+    .flg-false {
+        margin: 0;
+    }
 
-.title {
-    color: white;
-}
+    .flg-true {
+        color: blue;
+    }
 
-.flg-true {
-    color: blue;
-}
-
-.flg-false {
-    color: black;
+    .flg-false {
+        color: black;
+    }
 }
