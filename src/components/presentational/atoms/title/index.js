@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Prefix from '../../../../utils/prefix';
+
 const prefix = new Prefix().getPrefix('atoms');
 
 const Title = (props) => {
@@ -12,7 +13,7 @@ const Title = (props) => {
 };
 
 Title.propTypes = {
-    children: PropTypes.string.isRequired
+    children: PropTypes.string.isRequired,
 };
 
 export default Title;

@@ -2,13 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Title from '../../presentational/atoms/title/';
 import Prefix from '../../../utils/prefix';
+
 const prefix = new Prefix().getPrefix('templates');
 
 class Header extends React.Component {
-
-    constructor(props) {
-        super(props);
-    };
 
     getClassFlg(flg) {
         return flg ? `${prefix}flg-true` : `${prefix}flg-false`;
@@ -22,19 +19,21 @@ class Header extends React.Component {
         return (
             <header className={`${prefix}header`}>
                 <Title>{this.props.title}</Title>
-                <p className={this.getClassFlg(this.props.flg)}>{this.getSomething(this.props.flg)}</p>
+                <p className={this.getClassFlg(this.props.flg)}>
+                    {this.getSomething(this.props.flg)}
+                </p>
             </header>
         );
     }
 }
 
 Header.defaultProps = {
-    flg: false
+    flg: false,
 };
 
 Header.propTypes = {
     title: PropTypes.string.isRequired,
-    flg: PropTypes.bool
+    flg: PropTypes.bool,
 };
 
 export default Header;

@@ -1,10 +1,10 @@
 module.exports = class Prefix {
-    constructor () {
+    constructor() {
         this.prefix = '_b8aE-'; // random
         this.level = {
             atoms: 'at-',
             molecules: 'mo-',
-            templates: 'te-'
+            templates: 'te-',
         };
     }
 
@@ -14,4 +14,4 @@ module.exports = class Prefix {
         }
         return this.prefix;
     }
-}
+};
