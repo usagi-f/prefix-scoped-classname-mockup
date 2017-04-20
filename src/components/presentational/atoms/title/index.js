@@ -1,10 +1,16 @@
+// @flow
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Prefix from '../../../../utils/prefix';
 
 const prefix = new Prefix().getPrefix('atoms');
 
-const Title = (props) => {
+type Props = {
+    children?: String,
+};
+
+const Title = (props: Props) => {
     return (
         <h1 className={`${prefix}title`}>
             {props.children}
