@@ -1,20 +1,20 @@
 .te-header {
     background-color: red;
 
-    .flg-true,
-    .flg-false {
-        margin: 0;
-    }
-
-    .flg-true {
-        color: blue;
-    }
-
-    .flg-false {
-        color: black;
-    }
-
     .at-title {
         margin-bottom: 10px;
     }
+}
+
+.te-flg-true,
+.te-flg-false {
+    margin: 0;
+}
+
+.te-flg-true {
+    color: blue;
+}
+
+.te-flg-false {
+    color: black;
 }
