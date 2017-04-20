@@ -3,7 +3,8 @@
 }
 
 .title,
-.flg {
+.flg-true,
+.flg-false {
     margin: 0;
 }
 
@@ -11,6 +12,10 @@
     color: white;
 }
 
-.flg {
+.flg-true {
     color: blue;
+}
+
+.flg-false {
+    color: black;
 }

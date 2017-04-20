@@ -9,6 +9,10 @@ class Header extends React.Component {
         super(props);
     };
 
+    getClassFlg(flg) {
+        return flg ? `${prefix}flg-true` : `${prefix}flg-false`;
+    }
+
     getSomething(flg) {
         return flg ? 'TRUE' : 'FALSE';
     }
@@ -17,7 +21,7 @@ class Header extends React.Component {
         return (
             <header className={`${prefix}te-header`}>
                 <p className={`${prefix}title`}>{this.props.title}</p>
-                <p className={`${prefix}flg`}>{this.getSomething(this.props.flg)}</p>
+                <p className={this.getClassFlg(this.props.flg)}>{this.getSomething(this.props.flg)}</p>
             </header>
         );
     }
@@ -29,7 +33,7 @@ Header.defaultProps = {
 
 Header.propTypes = {
     title: PropTypes.string.isRequired,
-    flg: true
+    flg: PropTypes.bool
 };
 
 export default Header;
