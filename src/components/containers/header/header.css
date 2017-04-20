@@ -13,4 +13,8 @@
     .flg-false {
         color: black;
     }
+
+    .at-title {
+        margin-bottom: 10px;
+    }
 }
