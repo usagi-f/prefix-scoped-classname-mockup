@@ -2,7 +2,15 @@
     background-color: red;
 }
 
+.title,
+.flg {
+    margin: 0;
+}
+
 .title {
     color: white;
-    margin: 0;
+}
+
+.flg {
+    color: blue;
 }

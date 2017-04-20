@@ -4,7 +4,10 @@ import Header from './containers/header/';
 
 document.addEventListener('DOMContentLoaded', () => {
     render (
-        <Header />,
+        <Header
+            title='header'
+            flg={true}
+        />,
         document.querySelector('#app')
     );
 });
