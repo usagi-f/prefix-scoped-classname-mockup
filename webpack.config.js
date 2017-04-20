@@ -20,12 +20,15 @@ const jsconfig = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: 'babel-loader',
+                loader: 'babel-loader',
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: 'eslint-loader',
+                loader: 'eslint-loader',
+                options: {
+                    failOnError: true,
+                },
             },
         ],
     },
