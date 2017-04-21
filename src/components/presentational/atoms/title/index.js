@@ -18,8 +18,12 @@ const Title = (props: Props) => {
     );
 };
 
+Title.defaultProps = {
+    children: '',
+};
+
 Title.propTypes = {
-    children: PropTypes.string.isRequired,
+    children: PropTypes.string,
 };
 
 export default Title;
