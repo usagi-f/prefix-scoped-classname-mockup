@@ -6,7 +6,8 @@
     "build": "webpack --progress",
     "build:watch": "webpack --progress -w",
     "lint": "eslint src",
-    "flow": "flow"
+    "flow": "flow",
+    "plato": "node plato.js"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
@@ -23,6 +24,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
+    "es6-plato": "^1.0.14",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-loader": "^1.7.1",
