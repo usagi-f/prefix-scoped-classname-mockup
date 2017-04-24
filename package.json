@@ -9,7 +9,8 @@
     "flow": "flow",
     "plato": "node plato.js",
     "styleguide": "styleguidist server",
-    "build:styleguide": "styleguidist build"
+    "build:styleguide": "styleguidist build",
+    "stylestats": "node stylestats.js"
   },
   "dependencies": {
     "prop-types": "^15.5.8",
@@ -37,11 +38,13 @@
     "eslint-plugin-react": "^6.10.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "flow-bin": "^0.44.2",
+    "postcss": "^5.2.17",
     "postcss-class-prefix": "^0.3.0",
     "postcss-css-variables": "^0.7.0",
     "postcss-import": "^9.1.0",
     "postcss-loader": "^1.3.3",
     "postcss-nested": "^1.0.1",
+    "postcss-stylestats": "^1.0.0",
     "react-styleguidist": "^5.0.6",
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",

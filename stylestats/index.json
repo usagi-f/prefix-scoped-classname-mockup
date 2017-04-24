@@ -1,0 +1,59 @@
+{
+  "published": "2017-04-24T03:22:28.990Z",
+  "paths": [],
+  "stylesheets": 0,
+  "styleElements": 0,
+  "size": 280,
+  "dataUriSize": 0,
+  "ratioOfDataUriSize": 0,
+  "gzippedSize": 149,
+  "rules": 7,
+  "selectors": 8,
+  "declarations": 8,
+  "simplicity": 0.875,
+  "averageOfIdentifier": 1.125,
+  "mostIdentifier": 2,
+  "mostIdentifierSelector": ".te-header .at-title",
+  "averageOfCohesion": 1.1428571428571428,
+  "lowestCohesion": 2,
+  "lowestCohesionSelector": [
+    ".at-title"
+  ],
+  "totalUniqueFontSizes": 0,
+  "uniqueFontSizes": [],
+  "totalUniqueFontFamilies": 0,
+  "uniqueFontFamilies": [],
+  "totalUniqueColors": 3,
+  "uniqueColors": [
+    "BLACK",
+    "BLUE",
+    "WHITE"
+  ],
+  "totalUniqueBackgroundImages": 0,
+  "uniqueBackgroundImages": [],
+  "idSelectors": 0,
+  "universalSelectors": 0,
+  "unqualifiedAttributeSelectors": 0,
+  "javascriptSpecificSelectors": 0,
+  "importantKeywords": 0,
+  "floatProperties": 0,
+  "propertiesCount": [
+    {
+      "property": "margin",
+      "count": 3
+    },
+    {
+      "property": "color",
+      "count": 3
+    },
+    {
+      "property": "background-color",
+      "count": 1
+    },
+    {
+      "property": "margin-bottom",
+      "count": 1
+    }
+  ],
+  "mediaQueries": 0
+}
