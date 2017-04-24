@@ -15,18 +15,14 @@ const settings = {
 
 fs.readFile(settings.entry, (err, css) => {
     postcss([postcssImport, postcssCssVariables, postcssNested])
+        .use(stylestats(settings.options))
         .process(css, { from: settings.entry})
         .then(result => {
-            postcss()
-                .use(stylestats(settings.options))
-                .process(result.css)
-                .then(result => {
-                    if (result.messages[0].stats) {
-                        fs.writeFile(settings.output, result.messages[0].stats, (err) => {
-                            if (err) throw err;
-                            console.log('writeFile Done !');
-                        });
-                    }
+            if (result.messages[0].stats) {
+                fs.writeFile(settings.output, result.messages[0].stats, (err) => {
+                    if (err) throw err;
+                    console.log('writeFile Done !');
                 });
+            }
         });
 });
